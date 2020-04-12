@@ -1,0 +1,37 @@
+#CalcContainer{
+    background-color: gainsboro;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 5%;
+    padding: 10px;
+    justify-content: center;
+  }
+.grid-item {
+    background-color: rgba(213, 248, 243, 0.671);
+    border: 5px solid rgba(255, 216, 201, 0.8);
+    text-align: center;
+}
+
+#output {
+    grid-column: 1 / 5;
+    font-size: 30px;
+}
+
+#plus {
+    text-align: center;
+    align-content: center;
+    grid-area: 4 / 4 / 6 / 5;
+}
+
+#minus {
+    text-align: center;
+    align-content: center;
+    grid-area: 2 / 4 / 4 / 5;
+}
+
+#Enter {
+    grid-column: 3 / 5;
+}
