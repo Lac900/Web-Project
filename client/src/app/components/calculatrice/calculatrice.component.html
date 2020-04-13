@@ -4,23 +4,23 @@
     <span> Goals is to develop a caculator that take the input and compute in a python server</span>
 
     <div class="grid-container">
-        <div class="grid-item" id='output'> OUTPUT</div>
-        <app-button-c class="grid-item" text='%' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" text='*' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" text='/'clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" id='minus' text='-' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" text='7' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" text='8' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" text='9' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" id='plus' text='+' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" text='4' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" text='5' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" text='6' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" text='1' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" text='2' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" text='3' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" text='0' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" text=',' clickFunction='click()'></app-button-c>
-        <app-button-c class="grid-item" id= 'Enter' text=Enter clickFunction='click()'></app-button-c>
+        <div class="grid-item" id='output'> {{output}}</div>
+        <app-button-c class="grid-item" text='Clear' (clickFunction)='clear()'></app-button-c>
+        <app-button-c class="grid-item" text='*' (clickFunction)='click("*")'></app-button-c>
+        <app-button-c class="grid-item" text='/'(clickFunction)='click("/")'></app-button-c>
+        <app-button-c class="grid-item" id='minus' text='-' (clickFunction)='click("-")'></app-button-c>
+        <app-button-c class="grid-item" text='7' (clickFunction)='click("7")'></app-button-c>
+        <app-button-c class="grid-item" text='8' (clickFunction)='click("8")'></app-button-c>
+        <app-button-c class="grid-item" text='9' (clickFunction)='click("9")'></app-button-c>
+        <app-button-c class="grid-item" id='plus' text='+' (clickFunction)='click("+")'></app-button-c>
+        <app-button-c class="grid-item" text='4' (clickFunction)='click("4")'></app-button-c>
+        <app-button-c class="grid-item" text='5' (clickFunction)='click("5")'></app-button-c>
+        <app-button-c class="grid-item" text='6' (clickFunction)='click("6")'></app-button-c>
+        <app-button-c class="grid-item" text='1' (clickFunction)='click("1")'></app-button-c>
+        <app-button-c class="grid-item" text='2' (clickFunction)='click("2")'></app-button-c>
+        <app-button-c class="grid-item" text='3' (clickFunction)='click("3")'></app-button-c>
+        <app-button-c class="grid-item" text='0' (clickFunction)='click("0")'></app-button-c>
+        <app-button-c class="grid-item" text='.' (clickFunction)='click(".")'></app-button-c>
+        <app-button-c class="grid-item" id= 'Enter' text='=' (clickFunction)='calcul()'></app-button-c>
     </div> 
 </div>
