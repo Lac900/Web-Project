@@ -7,6 +7,7 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { MainHeaderComponent } from './components/main-header/main-header.component';
 import { CalculatriceComponent } from './components/calculatrice/calculatrice.component';
 import { ButtonCComponent } from './components/button-c/button-c.component';
+import { PhotoSwapComponent } from './components/photo-swap/photo-swap.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ButtonCComponent } from './components/button-c/button-c.component';
     MainPageComponent,
     MainHeaderComponent,
     CalculatriceComponent,
-    ButtonCComponent
+    ButtonCComponent,
+    PhotoSwapComponent
   ],
   imports: [
     BrowserModule,
