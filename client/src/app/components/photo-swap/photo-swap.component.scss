@@ -11,8 +11,7 @@
   margin: auto;
   height: 600px;
   width: 1200px;
-  opacity:1;
-  animation: fadein 3s;
+  animation: fadein 3s ease-in-out;
   animation-iteration-count: infinite;
 }
 
