@@ -6,7 +6,24 @@
   padding-bottom: 10px;
 }
 
-#pic{
+#pic {
   display: flex;
   margin: auto;
+  height: 600px;
+  width: 1200px;
+  opacity:1;
+  animation: fadein 3s;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes fadein {
+  20%,80% {
+    opacity: 1;
+  }
+
+  0%,100% {
+    opacity: 0;
+  }
 }

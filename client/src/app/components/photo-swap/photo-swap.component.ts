@@ -1,8 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { IMAGE_NAME_LIST } from '../Component.constant';
 import { interval, Subscription } from 'rxjs';
-
-
 
 @Component({
   selector: 'app-photo-swap',
@@ -11,12 +9,13 @@ import { interval, Subscription } from 'rxjs';
 })
 export class PhotoSwapComponent implements OnInit {
 
-  path = '../../../assets/';
-  imageDisplay = 0;
-  src = '';
+  @ViewChild('image') img: ElementRef;
+  path: string = '../../../assets/';
+  imageDisplay: number = 0;
+  src: string = '';
   subscription: Subscription;
-  intervalId: number;
-  timer = 3000
+  timer: number = 3000
+  isVisible:boolean = true;
 
   constructor() { }
 
