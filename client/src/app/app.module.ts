@@ -9,6 +9,7 @@ import { MainHeaderComponent } from './components/main-header/main-header.compon
 import { CalculatriceComponent } from './components/calculatrice/calculatrice.component';
 import { ButtonCComponent } from './components/button-c/button-c.component';
 import { PhotoSwapComponent } from './components/photo-swap/photo-swap.component';
+import { PixelImageComponent } from './pixel-image/pixel-image.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PhotoSwapComponent } from './components/photo-swap/photo-swap.component
     MainHeaderComponent,
     CalculatriceComponent,
     ButtonCComponent,
-    PhotoSwapComponent
+    PhotoSwapComponent,
+    PixelImageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\client",
+    "\\client\\src",
+    "\\client\\src\\app",
+    "\\client\\src\\app\\components",
+    "\\client\\src\\app\\components\\button-c",
+    "\\client\\src\\app\\components\\calculatrice",
+    "\\client\\src\\app\\components\\photo-swap",
+    "\\client\\src\\assets"
+  ],
+  "SelectedNode": "\\client\\src\\app\\components\\calculatrice\\calculatrice.component.ts",
+  "PreviewInSolutionExplorer": false
+}
