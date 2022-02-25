@@ -33,6 +33,13 @@ export class PixelImageComponent implements AfterViewInit {
     const img = this.getPixelColor(this.ctx.getImageData(0, 0, this.myCanvas.width, this.myCanvas.height));
     img.Invert();
     this.draw(img);
+    const meanPixel = img.GetMean(false);
+    console.log(meanPixel);
+    const dataMean: Pixel[] = [];
+    for (let i = 0; i < img.data.length; i++) {
+      dataMean[i] = meanPixel;
+    }
+    this.draw(new ImageCustom(img.height, img.width, dataMean));
   }
 
   getPixelColor(img: ImageData): ImageCustom {
